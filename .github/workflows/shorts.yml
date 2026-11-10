@@ -1,0 +1,15 @@
+name: AI Shorts Automation
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 3 * * *'
+
+jobs:
+  automation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Start Automation
+        run: |
+          echo "AI Shorts Automation Started!"
+          echo "Ready for video generation."
